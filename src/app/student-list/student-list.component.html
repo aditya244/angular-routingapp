@@ -1,0 +1,13 @@
+<h3> Student Details (list component)</h3>
+
+<div *ngFor = "let stud of students">
+    <a routerLink="/studentDetails/{{stud.id}}/{{stud.name}}/{{stud.marks}}">Id: {{stud.id}}, Name: {{stud.name}}</a>
+</div>
+<br>
+
+<div *ngIf="student.id">
+    <p>Your current selection: id {{student.id}}, Name: {{student.name}}, Marks: {{student.marks}}</p>
+</div>
+<!-- <p> Currently Selected :</p>
+<p> Id: {{student.id}}</p>
+<p> Name: {{student.name}}</p> -->

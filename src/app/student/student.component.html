@@ -1,0 +1,7 @@
+<h3> Add Student </h3>
+
+<label> Enter your name: </label>
+<input #name type="text">
+<button (click)="AddStudent(name.value)">Add Student</button>
+
+<!-- Here, we are accessing the value of input type using the template variable. It will return object. -->
